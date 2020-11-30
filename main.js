@@ -469,9 +469,9 @@ function checkDates(ev, endpreview, startpreview, realnow, rule, calName, filter
                     _IDID:    ev.uid,
                     _allDay:  true,
                     _rule:    rule,
-                    location: location,
+                    _location: location,
                     // add additional Objects, so iobroker.occ can use it
-                    _calName: calName,
+                    calName: calName,
                     _calColor: adapter.config.calendars.find(x => x.name === calName).color
                 });
 
@@ -505,9 +505,9 @@ function checkDates(ev, endpreview, startpreview, realnow, rule, calName, filter
                     _IDID:    ev.uid,
                     _allDay:  false,
                     _rule:    rule,
-                    location: location,
+                    _location: location,
                     // add additional Objects, so iobroker.occ can use it
-                    _calName: calName,
+                    calName: calName,
                     _calColor: adapter.config.calendars.find(x => x.name === calName).color
                 });
 
